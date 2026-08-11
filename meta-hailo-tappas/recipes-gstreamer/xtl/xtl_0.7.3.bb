@@ -2,7 +2,7 @@ SUMMARY = "Xtl: Basic tools (containers, algorithms) used by other quantstack pa
 HOMEPAGE = "https://github.com/xtensor-stack/xtl"
 
 SRCREV_xtl = "46f8a9390db2c52aaf41de8f93ed0dab97af012d"
-SRC_URI = "git://github.com/xtensor-stack/xtl.git;name=xtl"
+SRC_URI = "git://github.com/xtensor-stack/xtl.git;name=xtl;protocol=https;branch=master"
 
 LICENSE = "LICENSE"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=c12cbcb0f50cce3b0c58db4e3db8c2da"
