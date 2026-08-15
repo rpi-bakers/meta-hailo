@@ -32,6 +32,9 @@ do_install:append() {
     rm -rf ${D}/usr/lib/libhailo_tracker*
     rm -rf ${D}/${libdir}/libhailo_opencv_utils*
     rm -rf ${D}/${libdir}/libgsthailometa*
+    # Remove headers and pkgconfig that may duplicate files from libgsthailotools
+    rm -rf ${D}/usr/include/gsthailometa
+    rm -f ${D}/usr/lib/pkgconfig/gsthailometa.pc
 }
 
 FILES:${PN} += "${libdir}/hailo-post-processes/* ${ROOTFS_POST_PROCESSES_DIR}/* ${ROOTFS_POST_PROCESSES_DIR}/so.* \
